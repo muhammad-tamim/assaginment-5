@@ -1,0 +1,16 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+/*------------
+   Total card 
+  ------------ */
+.card-total{
+    width: 50%;
+}
+hr.new {
+    border: 2px solid black;
+}
+.promoInput{
+    height: 36px;
+}
