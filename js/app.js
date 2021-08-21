@@ -65,14 +65,16 @@ document.getElementById('DelivaryCharge').addEventListener('click', function Del
 document.getElementById('pomoBtn').addEventListener('click', function () {
     const pomoInput = document.getElementById('pomoInput').value;
     if (pomoInput == 'stevekaku') {
-        // const discount = document.getElementById('discount').innerText;
-        // const discountPercentage = parseInt(discount) + 10;
-        alert("Your pomo is matched.")
+        const discount = document.getElementById('discount');
+        const discountamount = discount.innerText;
+        const discountPercentage = parseInt(discountamount * 0.20);
+        const discountPercentageAmount = discountamount - discountPercentage;
+        discount.innerText = discountPercentageAmount;
     }
     else {
         alert("Your pomo is not matched. Please, Try again");
     }
-})
+});
 
 /* ---------------
     add pomo end
