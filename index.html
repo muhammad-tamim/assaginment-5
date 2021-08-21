@@ -42,20 +42,27 @@
                         <div>
                             <div class="my-5">
                                 <h4>Memory</h4>
-                                <button type="button" class="btn btn-outline-secondary">8GB unified memory</button>
-                                <button type="button" class="btn btn-outline-secondary">16GB unified memory</button>
+                                <button id="no-memory-cost" type="button" class="btn btn-outline-secondary">8GB unified
+                                    memory</button>
+                                <button id="extra-memory" type="button" class="btn btn-outline-secondary">16GB unified
+                                    memory</button>
                             </div>
                             <div class="my-5">
                                 <h4>Storage</h4>
-                                <button type="button" class="btn btn-outline-secondary">256GB SSD storage</button>
-                                <button type="button" class="btn btn-outline-secondary">512GB SSD storage</button>
-                                <button type="button" class="btn btn-outline-secondary">1TB SSD storage</button>
+                                <button id="no-storae-cost" type="button" class="btn btn-outline-secondary">256GB SSD
+                                    storage</button>
+                                <button id="extra-storage" type="button" class="btn btn-outline-secondary">512GB SSD
+                                    storage</button>
+                                <button id="extra-storage-1TB" type="button" class="btn btn-outline-secondary">1TB SSD
+                                    storage</button>
                             </div>
                             <div class="my-5">
                                 <h4>Choose your delivary option</h4>
-                                <button type="button" class="btn btn-outline-secondary">Friday, Aug 25 FREE Primary
+                                <button id="noDelivaryCharge" type="button" class="btn btn-outline-secondary">Friday,
+                                    Aug 25 FREE Primary
                                     Delivary</button>
-                                <button type="button" class="btn btn-outline-secondary">Friday, Aug 21 Charge
+                                <button id="DelivaryCharge" type="button" class="btn btn-outline-secondary">Friday, Aug
+                                    21 Charge
                                     $20</button>
                             </div>
                         </div>
@@ -67,7 +74,7 @@
                                     <h5 class="d-inline ms-2 fw-bold">Best Price</h5>
                                     <div class="float-end me-3">
                                         <h5 class="d-inline me-2 float-left">$</h5>
-                                        <h5 class="float-end">1299</h5>
+                                        <h5 id="main-price" class="float-end">1299</h5>
                                     </div>
                                     <hr>
                                 </div>
@@ -75,7 +82,7 @@
                                     <h5 class="d-inline ms-2 fw-bold">Extra Memory cost</h5>
                                     <div class="float-end me-3">
                                         <h5 class="d-inline me-2 float-left">$</h5>
-                                        <h5 class="float-end">0</h5>
+                                        <h5 id="memory-cost" class="float-end">0</h5>
                                     </div>
                                     <hr>
                                 </div>
@@ -83,7 +90,7 @@
                                     <h5 class="d-inline ms-2 fw-bold">Extra storage cost</h5>
                                     <div class="float-end me-3">
                                         <h5 class="d-inline me-2 float-left">$</h5>
-                                        <h5 class="float-end">0</h5>
+                                        <h5 id="storage-cost" class="float-end">0</h5>
                                     </div>
                                     <hr>
                                 </div>
@@ -91,7 +98,7 @@
                                     <h5 class="d-inline ms-2 fw-bold">Delivary Charge</h5>
                                     <div class="float-end me-3">
                                         <h5 class="d-inline me-2 float-left">$</h5>
-                                        <h5 class="float-end">0</h5>
+                                        <h5 id="delivary-charge" class="float-end">0</h5>
                                     </div>
                                     <hr class="new">
                                 </div>
@@ -99,13 +106,14 @@
                                     <h5 class="d-inline ms-2 fw-bold">Total Price</h5>
                                     <div class="float-end me-3">
                                         <h5 class="d-inline me-2 float-left">$</h5>
-                                        <h5 class="float-end">1299</h5>
+                                        <h5 id="total-price" class="float-end">1299</h5>
                                     </div>
                                 </div>
                                 <div class="py-5">
-                                    <!-- promo Input  -->
-                                    <input class="promoInput d-inline" type="text" name="" id="">
-                                    <!-- promo Batton  -->
+                                    <h5>Add pomo code</h5>
+                                    <!-- pomo Input  -->
+                                    <input class="pomoInput d-inline" type="text" name="" id="">
+                                    <!-- pomo Batton  -->
                                     <button type="button" class="btn btn-primary d-inline ms-2">Apply</button>
                                 </div>
                             </div>
@@ -120,7 +128,7 @@
     <!-- footer start  -->
     <footer>
         <hr>
-        <h2 class="text-center">Total $1299</h2>
+        <h2 class="text-center">Total $ <span id="discount">1299</span></h2>
     </footer>
     <!-- footer end  -->
 
