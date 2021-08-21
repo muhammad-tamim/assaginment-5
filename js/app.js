@@ -63,7 +63,8 @@ document.getElementById('DelivaryCharge').addEventListener('click', function Del
    ------------------*/
 
 document.getElementById('pomoBtn').addEventListener('click', function () {
-    const pomoInput = document.getElementById('pomoInput').value;
+    const pomo = document.getElementById('pomoInput');
+    const pomoInput = pomo.value;
     if (pomoInput == 'stevekaku') {
         const discount = document.getElementById('discount');
         const discountamount = discount.innerText;
@@ -74,6 +75,7 @@ document.getElementById('pomoBtn').addEventListener('click', function () {
     else {
         alert("Your pomo is not matched. Please, Try again");
     }
+    pomo.value = " ";
 });
 
 /* ---------------
