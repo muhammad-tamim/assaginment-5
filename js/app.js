@@ -57,3 +57,23 @@ document.getElementById('DelivaryCharge').addEventListener('click', function Del
     totalPrice();
 });
 // Extra storae cost end
+
+/* ------------------
+     add pomo start
+   ------------------*/
+
+document.getElementById('pomoBtn').addEventListener('click', function () {
+    const pomoInput = document.getElementById('pomoInput').value;
+    if (pomoInput == 'stevekaku') {
+        // const discount = document.getElementById('discount').innerText;
+        // const discountPercentage = parseInt(discount) + 10;
+        alert("Your pomo is matched.")
+    }
+    else {
+        alert("Your pomo is not matched. Please, Try again");
+    }
+})
+
+/* ---------------
+    add pomo end
+   ---------------*/
